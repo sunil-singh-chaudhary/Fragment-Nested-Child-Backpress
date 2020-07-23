@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:tag="cards main container">
+
+    <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        card_view:cardBackgroundColor="#D0D1CF"
+        card_view:cardCornerRadius="10dp"
+        card_view:cardElevation="5dp"
+        card_view:cardUseCompatPadding="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_launcher_background" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:orientation="vertical"
+                android:weightSum="6.5">
+
+                <LinearLayout
+                    android:id="@+id/new_notification_linearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_weight="1.5"
+                    android:gravity="right|center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingRight="4dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="2dp"
+                        android:gravity="center|center_vertical"
+                        android:text="new message"
+                        android:textColor="@color/colorPrimary">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+
+                        android:gravity="center|center_vertical"
+                        android:text="15"
+                        android:textColor="#fff"
+                       >
+
+                    </TextView>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/user_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2.0"
+                    android:gravity="left|center"
+                    android:textSize="22dp"
+                    android:paddingLeft="10dp"
+                    android:textColor="#FF1111"
+                    android:text="Current"
+                  />
+
+                <TextView
+                    android:id="@+id/user_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="3.0"
+                    android:gravity="left|top"
+                    android:maxLines="2"
+                    android:textColor="#FF1111"
+                    android:textSize="18dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="5dp"
+                    android:text="This is the description placed here"
+                   />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
+
+

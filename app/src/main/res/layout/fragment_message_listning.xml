@@ -1,0 +1,32 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/for_fullmsg_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D30322">
+
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/msg_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_marginTop="60dp"
+            android:layout_height="match_parent" />
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
